@@ -1,0 +1,174 @@
+/* Definindo variáveis */
+
+:root{
+    --dark-purple: #46177C;
+    --dark-grey: #232323;
+    --almost-black: #1A1A1A;
+    --green: #53FF50;
+}
+
+
+
+/* Importando fontes */
+
+@font-face {
+    font-family: 'Cairo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cairo Regular'), url('../fonts/Cairo-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cairo ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cairo ExtraLight'), url('../fonts/Cairo-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cairo Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cairo Light'), url('../fonts/Cairo-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cairo SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cairo SemiBold'), url('../fonts/Cairo-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cairo Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cairo Bold'), url('../fonts/Cairo-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cairo Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cairo Black'), url('../fonts/Cairo-Black.woff') format('woff');
+}
+
+
+
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--almost-black);
+    color: white;
+    font-family: 'Cairo Regular';
+}
+
+
+
+/* Configurando a navbar */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 5%;
+    
+
+    background-color: var(--dark-grey);
+}
+
+img#icon-drone{
+    width: 2rem;
+    margin: 0 0.3rem 0 0.8rem;
+}
+
+img#brand-text{
+    width: 85px;
+    margin-right: 1.5rem;
+}
+
+a.menu-item{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+a.menu-item:hover{
+    color: var(--green);
+    transition: 200ms ease-in-out;
+}
+
+#places-menu-item{
+    font-family: 'Cairo Bold';
+    color: var(--green);
+    background-color: var(--dark-purple);
+    height: 100%;
+}
+
+a img{
+    padding-top: 0.6rem;
+}
+
+
+
+/* Estilizando o título */
+h1{
+    font-family: 'Cairo Bold';
+    font-size: 32px;
+    margin: 3% 0 0.6rem 15%;
+}
+
+
+
+/* Configurando o conteúdo */
+
+#content{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    margin-left: 15%;
+
+    font-size: 20px;
+}
+
+#coverage-map{
+    width: 40%;
+}
+
+#explanation-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 8%;
+}
+
+p#main-text{
+    width: 50%;
+    padding: 1rem 2.5rem;
+
+    background-color: var(--dark-purple);
+    border-radius: 2rem;
+}
+
+h2{
+    font-family: 'Cairo Bold';
+    font-size: 20px;
+    color: var(--green);
+}
+
+div#note{
+    padding-top: 1rem;
+}
+
+p#note-text{
+    width: 50%;
+    font-size: 14px;
+}
